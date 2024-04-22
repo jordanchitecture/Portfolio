@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan Henry || Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 33%; /* Sidebar takes 1/3 of the screen width */
+            height: 100%;
+            background-color: #f4f4f4;
+            padding: 50px; /* Uniform padding */
+            padding-left: 35px; /* Adjusted left padding */
+            box-sizing: border-box;
+            font-size: 1.5em;
+        }
+        .sidebar-content {
+            width: 100%; /* Content uses full sidebar width */
+            margin: 0 auto; /* Centering content within sidebar */
+        }
+        .main-content {
+            margin-left: 33%; /* Main content starts after the sidebar */
+            padding: 50px; /* Uniform padding */
+            overflow: auto;
+            height: 100vh;
+            font-size: 1.2em;
+        }
+        .project {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ccc;
+        }
+        .project-info {
+            width: 33%; /* 1/3 of the main content width for project info */
+        }
+        .project-content {
+            width: 65%; /* 2/3 of the main content width for project content */
+        }
+        .project:last-child {
+            border-bottom: none;
+        }
+        h1, h2, h3, a {
+            font-weight: 700; /* Title and links */
+            text-decoration: none; /* Removes underline from links */
+            color: black; /* Sets text color to black for all headings and links */
+        }
+        h2 {
+            font-size: 1em; /* Unifies font size with navigational links */
+        }
+        p {
+            font-weight: 200; /* Lighter font weight for descriptions */
+        }
+        .description {
+            font-weight: 200; /* Font weight for descriptions */
+            font-size: 0.9em; /* Smaller font size for descriptions to match sidebar links */
+        }
+        li {
+            font-weight: 200; /* Ensures project links are Josefin Sans weight 200 */
+        }
+        p a {
+            font-weight: 200; /* Ensures links themselves are specifically styled to weight 200, correcting previous oversight */
+        }
+        iframe {
+            width: 100%; /* Full width of its container */
+            height: calc(100% + 50px); /* Increased height by 50px */
+            border: none;
+        }
+        .project-title {
+            font-weight: 500; /* Specific weight for 'ART & ARCHITECTURE' and similar headings */
+        }
+        .gap {
+            margin-top: 40px; /* Adds more space before 'PORTFOLIO' */
+            height: 20px; /* Visible gap for clearer separation */
+        }
+        .break {
+            display: block; /* Makes sure the break is effectively using its own line */
+            height: 20px; /* Height of the break for visual spacing */
+            background: transparent; /* Ensures the break does not introduce any unwanted color */
+        }
+    </style>
+</head>
+
+
+<body>
+
+<div class="sidebar">
+    <div class="sidebar-content">
+        <h1>JORDAN HENRY</h1>
+        <h2 class="project-title">ART & ARCHITECTURE</h2>
+        <p class="description">Explore my collection of creative coding charettes that illustrate how I have grown in my knowledge of coding over my Spring 2024 semester</p>
+        <div class="break"></div> <!-- Visual break added here -->
+        <h2><a href="https://jordan-henry.com/">PORTFOLIO</a></h2>
+        <h2><a href="https://jordan-henry.com/about">ABOUT</a></h2>
+        <h2><a href="https://jordan-henry.com/experience">EXPERIENCE</a></h2>
+        <h2><a href="https://jordan-henry.com/contact">CONTACT</a></h2>
+        <h2>CODING</h2>
+        <ul>
+            <p><a href="#project1">LOST OBJECT</a></p>
+            <p><a href="#project2">PARAMETRIC FISH</a></p>
+            <p><a href="#project3">EYE ON YOU</a></p>
+            <p><a href="#project4">HYBRID MONSTER</a></p>
+            <p><a href="#project5">OPTICAL ILLUSION</a></p>
+            <p><a href="#project6">DATA PORTRAIT</a></p>
+            <p><a href="#project7">GETTIN' LOST</a></p>
+        </ul>
+    </div>
+</div>
+
+<div class="main-content">
+    <div class="project" id="project1">
+        <div class="project-info">
+            <h2>LOST OBJECT</h2>
+            <p class="description">Exploring the functionality of JavaScript coding, I used shape primitives to create a visual representation of an item that is frequently lost, Apple Airpods.</p>
+        </div>
+        <div class="project-content">
+            <iframe src="https://editor.p5js.org/jdhenry23/full/YNYko3lzk" style="height: 1050px;"></iframe>
+        </div>
+    </div>
+    <div class="project" id="project2">
+        <div class="project-info">
+            <h2>PARAMETRIC FISH</h2>
+            <p class="description">To create a fish that responded to the users mouse location, I utilized parametric coding allowing different parameters to be changed depending on the users mouse coordinates.</p>
+        </div>
+        <div class="project-content">
+            <iframe src="https://editor.p5js.org/jdhenry23/full/Fcddt_8_G" style="height: 650px;"></iframe>
+        </div>
+    </div>
+    <div class="project" id="project3">
+        <div class="project-info">
+            <h2>EYE ON YOU</h2>
+            <p class="description">With subtle undertones of online surveillance and how every move you make online is being recorded to some capacity, I crafted a parametric sequence that tracks the users mouse movements and clicks which is then followed by an ominous eye that appears after all three rings are closed. CLICK!</p>
+        </div>
+        <div class="project-content">
+            <iframe src="https://editor.p5js.org/jdhenry23/full/L3DveTMel" style="height: 550px;"></iframe>
+        </div>
+    </div>
+    <div class="project" id="project4">
+        <div class="project-info">
+            <h2>HYBRID MONSTER</h2>
+            <p class="description">Collaborating with 2 other creators, we each designed a separate creature and, from those different parts, assembled our own hybrid monster. This project involved exploring the use of SVG files in JavaScript.</p>
+        </div>
+        <div class="project-content">
+            <iframe src="https://editor.p5js.org/jdhenry23/full/ENfL-iiBw" style="height: 850px;"></iframe>
+        </div>
+    </div>
+    <div class="project" id="project5">
+        <div class="project-info">
+            <h2>OPTICAL ILLUSION</h2>
+            <p class="description">Drawing inspiration from my lineage and traditional Norwegian patterns and motifs, I designed an optical illusion that responds to the location and clicking of the mouse to create different patterns and illusions. CLICK!</p>
+        </div>
+        <div class="project-content">
+            <iframe src="https://editor.p5js.org/jdhenry23/full/crY9PrXAc" style="height: 650px;"></iframe>
+        </div>
+    </div>
+    <div class="project" id="project6">
+        <div class="project-info">
+            <h2>DATA PORTRAIT</h2>
+            <p class="description">Recording data on different factors based on the occurrences of when I looked out a window over the course of a weekend, I coded a scene in which the diorama reflects the data I collected. This includes weather conditions, time of day, and if I was listening to music at that moment. CLICK!</p>
+        </div>
+        <div class="project-content">
+            <iframe src="https://editor.p5js.org/jdhenry23/full/iwZ5KNhDH" style="height: 650px;"></iframe>
+        </div>
+    </div>
+    <div class="project" id="project7">
+        <div class="project-info">
+            <h2>GETTIN' LOST</h2>
+            <p class="description">To end off my coding endeavors for the semester, I wanted to take on an ambitious project of coding a Mario inspired game. Getting’ Lost is based on a real life experience of me attempting to get to the New York Public Library but getting lost along the way. In this game which only contains the first level, you will play as me running through Brooklyn making it to the subway stop at the end of the level while attempting to collect as many MetroCards as you can. The level starts at the front gates of Pratt Institute and moves through the brownstones of Clinton Hill, Fort Greene Park, past the Brooklyn Academy of Music, through Downtown Brooklyn, and ending at the subway station in front of Brooklyn Borough Hall. Use W A S D to move around! Enjoy!</p>
+        </div>
+        <div class="project-content">
+            <iframe src="https://editor.p5js.org/jdhenry23/full/3JyA5M1jf" style="height: 650px;"></iframe>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
